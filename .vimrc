@@ -40,14 +40,14 @@ nnoremap Q :q<CR>
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 iabbre ``` ```<CR>```<UP>
 
-cabbre vimrc ~/Dropbox/managed-files/.vimrc
-command! Vimrc edit ~/Dropbox/managed-files/.vimrc
+cabbre vimrc ~/Dropbox/vim/.vimrc
+command! Vimrc edit ~/Dropbox/vim/.vimrc
 
-cabbre zshrc ~/Dropbox/managed-files/.zshrc
-command! Zshrc edit ~/Dropbox/managed-files/.zshrc
+cabbre zshrc ~/Dropbox/zsh/.zshrc
+command! Zshrc edit ~/Dropbox/zsh/.zshrc
 
-cabbre karabiner ~/Dropbox/managed-files/karabiner.json
-command! Kara edit ~/Dropbox/managed-files/karabiner.json
+cabbre karabiner ~/Dropbox/karabiner/karabiner.json
+command! Kara edit ~/Dropbox/karabiner/karabiner.json
 
 cabbre rootwk ~/Dropbox/wiki/index.md 
 command! Rootwk edit ~/Dropbox/wiki/index.md 
