@@ -78,4 +78,8 @@ command! Tc tabclose
 command! S source %
 
 command! C :!clear
-command! Gadd Git add %
+command! Ga Git add %
+command! Gs Git status
+command! Gc Git Commit
+command! Gps Git push
+command! Gpl Git pull
