@@ -59,6 +59,7 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
 nnoremap Q :q<CR>
+nnoremap Z :w<CR>
 
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 
@@ -66,6 +67,7 @@ runtime macros/matchit.vim
 
 set autochdir
 set autowrite
+set cul
 set expandtab
 set hlsearch
 set incsearch
