@@ -17,6 +17,8 @@ set nocompatible
 filetype plugin on
 syntax on
 
+runtime macros/matchit.vim
+
 let g:vimwiki_list = [
     \{
     \    'path': '~/Dropbox/wiki/',
@@ -57,6 +59,7 @@ command! Oswk edit ~/Dropbox/wiki/os/index.md
 
 cabbre gitwk ~/Dropbox/wiki/git/index.md 
 command! Gitwk edit ~/Dropbox/wiki/git/index.md 
+command! Cm edit ~/Dropbox/wiki/git/Commit messages.md
 
 cabbre memowk ~/Dropbox/wiki/memo/index.md 
 command! Memowk edit ~/Dropbox/wiki/memo/index.md
@@ -68,6 +71,8 @@ command! Vimwk edit ~/Dropbox/wiki/vim/index.md
 cabbre wkall ~/Dropbox/wiki/*/*
 
 cabbre renamelink VimwikiRenameLink
+command! Rl VimwikiRenameLink
+
 cabbre sudowrite sudo tee % > /dev/null
 cabbre me %
 cabbre N enew
