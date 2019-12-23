@@ -88,3 +88,4 @@ cabbre gs Git status
 cabbre gc Git Commit
 cabbre gps Git push
 cabbre gpl Git pull
+cabbre gf Git diff
