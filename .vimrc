@@ -5,6 +5,7 @@ cabbre ga Git add %
 cabbre gc Git Commit
 cabbre gc0 Git Commit --allow-empty
 cabbre gcm Git Commit --amend
+cabbre gcma Git Commit --amend -a
 cabbre gf Git diff
 cabbre gitwk ~/Dropbox/wiki/git/index.md 
 cabbre gpl Git pull
