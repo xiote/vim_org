@@ -64,6 +64,7 @@ noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 runtime macros/matchit.vim
 
 set autochdir
+set autowrite
 set expandtab
 set hlsearch
 set incsearch
