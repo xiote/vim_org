@@ -89,4 +89,4 @@ cabbre gc Git Commit
 cabbre gps Git push
 cabbre gpl Git pull
 cabbre gf Git diff
-cabbre gm Git Commit --amend
+cabbre gcm Git Commit --amend
