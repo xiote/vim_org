@@ -27,8 +27,9 @@ command! C :!clear
 command! Cm edit ~/Dropbox/wiki/git/Commit messages.md
 command! Gitwk edit ~/Dropbox/wiki/git/index.md 
 command! Kara edit ~/Dropbox/karabiner/karabiner.json
-command! Memowk edit ~/Dropbox/wiki/memo/index.md
+command! M edit ~/Dropbox/wiki/memo/index.md
 command! Memo edit ~/Dropbox/wiki/memo/index.md
+command! Memowk edit ~/Dropbox/wiki/memo/index.md
 command! Oswk edit ~/Dropbox/wiki/os/index.md 
 command! Rl VimwikiRenameLink
 command! Rootwk edit ~/Dropbox/wiki/index.md 
