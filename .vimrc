@@ -73,7 +73,7 @@ cabbre wkall ~/Dropbox/wiki/*/*
 cabbre renamelink VimwikiRenameLink
 command! Rl VimwikiRenameLink
 
-cabbre sudowrite sudo tee % > /dev/null
+cabbre Sw sudo tee % > /dev/null
 cabbre me %
 cabbre N enew
 
@@ -83,8 +83,8 @@ command! Tc tabclose
 command! S source %
 
 command! C :!clear
-command! Ga Git add %
-command! Gs Git status
-command! Gc Git Commit
-command! Gps Git push
-command! Gpl Git pull
+cabbre ga Git add %
+cabbre gs Git status
+cabbre gc Git Commit
+cabbre gps Git push
+cabbre gpl Git pull
