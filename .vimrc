@@ -1,5 +1,5 @@
-autocmd InsertEnter * set cul
-autocmd InsertLeave * set nocul
+autocmd InsertEnter * set nocul
+autocmd InsertLeave * set cul
 
 cabbre ga Git add %
 cabbre gc Git Commit
