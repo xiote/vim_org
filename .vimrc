@@ -38,6 +38,7 @@ command! S source %
 command! T tabnew 
 command! Tc tabclose
 command! Tn tabnew 
+command! V edit ~/Dropbox/vim/.vimrc
 command! Vimrc edit ~/Dropbox/vim/.vimrc
 command! Vimwk edit ~/Dropbox/wiki/vim/index.md 
 command! Zshrc edit ~/Dropbox/zsh/.zshrc
