@@ -23,6 +23,7 @@ cabbre zshrc ~/Dropbox/zsh/.zshrc
 command! C :!clear
 command! Cm edit ~/Dropbox/wiki/git/Commit messages.md
 command! D :bd
+command! G edit ~/Dropbox/wiki/git/index.md 
 command! Gitwk edit ~/Dropbox/wiki/git/index.md 
 command! K edit ~/Dropbox/karabiner/karabiner.json
 command! Kara edit ~/Dropbox/karabiner/karabiner.json
