@@ -2,8 +2,7 @@ autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 cabbre ga Git add %
-cabbre gc Git Commit
-cabbre gca Git Commit -a
+cabbre gc Git Commit -a -m %
 cabbre gc0 Git Commit --allow-empty
 cabbre gcm Git Commit --amend
 cabbre gcma Git Commit --amend -a
