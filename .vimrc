@@ -21,7 +21,6 @@ cabbre wkall ~/Dropbox/wiki/*/*
 cabbre zshrc ~/Dropbox/zsh/.zshrc
 
 command! C :!clear
-command! Cm edit ~/Dropbox/wiki/git/Commit messages.md
 command! D :bd
 command! G edit ~/Dropbox/wiki/git/index.md 
 command! Gitwk edit ~/Dropbox/wiki/git/index.md 
@@ -55,6 +54,7 @@ let g:vimwiki_list = [
     \}
 \]
 
+nnoremap @ :
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
