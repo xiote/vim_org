@@ -21,8 +21,8 @@ command! C :!clear
 command! D :bd
 command! G edit ~/Dropbox/wiki/git/index.md 
 command! Gitwk edit ~/Dropbox/wiki/git/index.md 
-command! K edit ~/Dropbox/karabiner/karabiner.json
-command! Kara edit ~/Dropbox/karabiner/karabiner.json
+command! K edit ~/github.com/xiote/karabiner/karabiner.json
+command! Kara edit ~/github.com/xiote/karabiner/karabiner.json
 command! M edit ~/Dropbox/wiki/memo/index.md
 command! Memo edit ~/Dropbox/wiki/memo/index.md
 command! Memowk edit ~/Dropbox/wiki/memo/index.md
@@ -33,10 +33,10 @@ command! S source %
 command! T tabnew 
 command! Tc tabclose
 command! Tn tabnew 
-command! V edit ~/Dropbox/vim/.vimrc
-command! Vimrc edit ~/Dropbox/vim/.vimrc
+command! V edit ~/github.com/xiote/vim/.vimrc
+command! Vimrc edit ~/github.com/xiote/vim/.vimrc
 command! Vimwk edit ~/Dropbox/wiki/vim/index.md 
-command! Zshrc edit ~/Dropbox/zsh/.zshrc
+command! Zshrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
 
