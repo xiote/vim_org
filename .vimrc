@@ -71,7 +71,6 @@ set incsearch
 set nocompatible
 set nowrapscan
 set number
-set shell=!(which zsh)
 set shiftwidth=4 
 set softtabstop=4 
 
