@@ -9,16 +9,13 @@ cabbre gl Git Log
 cabbre gpl Git pull
 cabbre gps Git push
 cabbre gs Git status
-cabbre karabiner ~/Dropbox/karabiner/karabiner.json
 cabbre N enew
 cabbre oswk ~/Dropbox/wiki/os/index.md 
 cabbre renamelink VimwikiRenameLink
 cabbre rootwk ~/Dropbox/wiki/index.md 
 cabbre Sw sudo tee % > /dev/null
-cabbre vimrc ~/Dropbox/vim/.vimrc
 cabbre vimwk ~/Dropbox/wiki/vim/index.md 
 cabbre wkall ~/Dropbox/wiki/*/*
-cabbre zshrc ~/Dropbox/zsh/.zshrc
 
 command! C :!clear
 command! D :bd
@@ -74,7 +71,7 @@ set incsearch
 set nocompatible
 set nowrapscan
 set number
-set shell=/usr/bin/zsh
+set shell=(which zsh)
 set shiftwidth=4 
 set softtabstop=4 
 
