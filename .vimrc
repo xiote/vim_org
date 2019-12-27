@@ -17,27 +17,27 @@ cabbre Sw sudo tee % > /dev/null
 cabbre vimwk ~/Dropbox/wiki/vim/index.md 
 cabbre wkall ~/Dropbox/wiki/*/*
 
-command! C :!clear
-command! D :bd
-command! G edit ~/Dropbox/wiki/git/index.md 
-command! Gitwk edit ~/Dropbox/wiki/git/index.md 
-command! K edit ~/github.com/xiote/karabiner/karabiner.json
-command! Kara edit ~/github.com/xiote/karabiner/karabiner.json
-command! M edit ~/Dropbox/wiki/memo/index.md
-command! Memo edit ~/Dropbox/wiki/memo/index.md
-command! Memowk edit ~/Dropbox/wiki/memo/index.md
-command! Oswk edit ~/Dropbox/wiki/os/index.md 
-command! Rl VimwikiRenameLink
-command! Rootwk edit ~/Dropbox/wiki/index.md 
-command! S source %
-command! T tabnew 
-command! Tc tabclose
-command! Tn tabnew 
-command! V edit ~/github.com/xiote/vim/.vimrc
-command! Vimrc edit ~/github.com/xiote/vim/.vimrc
-command! Vimwk edit ~/Dropbox/wiki/vim/index.md 
-command! W w | Git Commit -a -m % | Git push
-command! Zshrc edit ~/github.com/xiote/zsh/.zshrc
+cabbre C :!clear
+cabbre D :bd
+cabbre G edit ~/Dropbox/wiki/git/index.md 
+cabbre Gitwk edit ~/Dropbox/wiki/git/index.md 
+cabbre K edit ~/github.com/xiote/karabiner/karabiner.json
+cabbre Kara edit ~/github.com/xiote/karabiner/karabiner.json
+cabbre M edit ~/Dropbox/wiki/memo/index.md
+cabbre Memo edit ~/Dropbox/wiki/memo/index.md
+cabbre Memowk edit ~/Dropbox/wiki/memo/index.md
+cabbre Oswk edit ~/Dropbox/wiki/os/index.md 
+cabbre Rl VimwikiRenameLink
+cabbre Rootwk edit ~/Dropbox/wiki/index.md 
+cabbre S source %
+cabbre T tabnew 
+cabbre Tc tabclose
+cabbre Tn tabnew 
+cabbre V edit ~/github.com/xiote/vim/.vimrc
+cabbre Vimrc edit ~/github.com/xiote/vim/.vimrc
+cabbre Vimwk edit ~/Dropbox/wiki/vim/index.md 
+cabbre W w | Git Commit -a -m % | Git push
+cabbre Zshrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
 
