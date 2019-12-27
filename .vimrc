@@ -1,42 +1,31 @@
 autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
+cabbre cl !clear
+cabbre D :bd
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
 cabbre gd Git diff
-cabbre gitwk ~/Dropbox/wiki/git/index.md 
+cabbre gitwk edit ~/Dropbox/wiki/git/index.md 
 cabbre gl Git Log
 cabbre gpl Git pull
 cabbre gps Git push
 cabbre gs Git status
+cabbre gw w <bar> Git Commit -a -m % <bar> Git push
+cabbre kara edit ~/github.com/xiote/karabiner/karabiner.json
 cabbre N enew
-cabbre oswk ~/Dropbox/wiki/os/index.md 
-cabbre renamelink VimwikiRenameLink
-cabbre rootwk ~/Dropbox/wiki/index.md 
-cabbre Sw sudo tee % > /dev/null
-cabbre vimwk ~/Dropbox/wiki/vim/index.md 
-cabbre wkall ~/Dropbox/wiki/*/*
-
-cabbre C !clear
-cabbre D :bd
-cabbre G edit ~/Dropbox/wiki/git/index.md 
-cabbre Gitwk edit ~/Dropbox/wiki/git/index.md 
-cabbre K edit ~/github.com/xiote/karabiner/karabiner.json
-cabbre Kara edit ~/github.com/xiote/karabiner/karabiner.json
-cabbre M edit ~/Dropbox/wiki/memo/index.md
-cabbre Memo edit ~/Dropbox/wiki/memo/index.md
-cabbre Memowk edit ~/Dropbox/wiki/memo/index.md
-cabbre Oswk edit ~/Dropbox/wiki/os/index.md 
-cabbre Rl VimwikiRenameLink
-cabbre Rootwk edit ~/Dropbox/wiki/index.md 
+cabbre memo edit ~/Dropbox/wiki/memo/index.md
+cabbre oswk edit ~/Dropbox/wiki/os/index.md 
+cabbre rl VimwikiRenameLink
+cabbre rootwk edit ~/Dropbox/wiki/index.md 
+cabbre sudotee sudo tee % > /dev/null
+cabbre tc tabclose
+cabbre tn tabnew 
 cabbre T tabnew 
-cabbre Tc tabclose
-cabbre Tn tabnew 
-cabbre V edit ~/github.com/xiote/vim/.vimrc
-cabbre Vimrc edit ~/github.com/xiote/vim/.vimrc
-cabbre Vimwk edit ~/Dropbox/wiki/vim/index.md 
-cabbre W clear <bar> w  <bar> Git Commit -a -m % <bar> Git push
-cabbre Zshrc edit ~/github.com/xiote/zsh/.zshrc
+cabbre vimwk edit ~/Dropbox/wiki/vim/index.md 
+cabbre vrc edit ~/github.com/xiote/vim/.vimrc
+cabbre wkall ~/Dropbox/wiki/*/*
+cabbre zrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
 
