@@ -11,7 +11,7 @@ cabbre gl Git Log
 cabbre gpl Git pull
 cabbre gps Git push
 cabbre gs Git status
-cabbre gw w <BAR> Git Commit -a -m % <BAR> Git push 
+cabbre gw cl <BAR> w <BAR> Git Commit -a -m % <BAR> Git push 
 cabbre kara edit ~/github.com/xiote/karabiner/karabiner.json
 cabbre N enew
 cabbre memo edit ~/Dropbox/wiki/memo/index.md
