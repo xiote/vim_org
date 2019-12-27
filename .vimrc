@@ -36,7 +36,7 @@ cabbre Tn tabnew
 cabbre V edit ~/github.com/xiote/vim/.vimrc
 cabbre Vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre Vimwk edit ~/Dropbox/wiki/vim/index.md 
-cabbre W w | Git Commit -a -m % | Git push
+cabbre W w <bar> Git Commit -a -m % <bar> Git push
 cabbre Zshrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
