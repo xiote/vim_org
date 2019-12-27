@@ -17,7 +17,7 @@ cabbre Sw sudo tee % > /dev/null
 cabbre vimwk ~/Dropbox/wiki/vim/index.md 
 cabbre wkall ~/Dropbox/wiki/*/*
 
-cabbre C :!clear
+cabbre C !clear
 cabbre D :bd
 cabbre G edit ~/Dropbox/wiki/git/index.md 
 cabbre Gitwk edit ~/Dropbox/wiki/git/index.md 
@@ -29,14 +29,13 @@ cabbre Memowk edit ~/Dropbox/wiki/memo/index.md
 cabbre Oswk edit ~/Dropbox/wiki/os/index.md 
 cabbre Rl VimwikiRenameLink
 cabbre Rootwk edit ~/Dropbox/wiki/index.md 
-cabbre S source %
 cabbre T tabnew 
 cabbre Tc tabclose
 cabbre Tn tabnew 
 cabbre V edit ~/github.com/xiote/vim/.vimrc
 cabbre Vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre Vimwk edit ~/Dropbox/wiki/vim/index.md 
-cabbre W w <bar> Git Commit -a -m % <bar> Git push
+cabbre W clear <bar> w  <bar> Git Commit -a -m % <bar> Git push
 cabbre Zshrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
