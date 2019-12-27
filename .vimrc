@@ -11,7 +11,7 @@ cabbre gl Git Log
 cabbre gpl Git pull
 cabbre gps Git push
 cabbre gs Git status
-cabbre gw w <bar> Git Commit -a -m % <bar> Git push
+cabbre gw w <bar> Git Commit -a -m % <bar> Git push <bar> !clear
 cabbre kara edit ~/github.com/xiote/karabiner/karabiner.json
 cabbre N enew
 cabbre memo edit ~/Dropbox/wiki/memo/index.md
@@ -40,7 +40,6 @@ let g:vimwiki_list = [
     \}
 \]
 
-nnoremap @ :
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
