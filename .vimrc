@@ -36,6 +36,7 @@ command! Tn tabnew
 command! V edit ~/github.com/xiote/vim/.vimrc
 command! Vimrc edit ~/github.com/xiote/vim/.vimrc
 command! Vimwk edit ~/Dropbox/wiki/vim/index.md 
+command! W w <bar> gc <bar> gps
 command! Zshrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
