@@ -2,7 +2,7 @@ autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 cabbre cl !clear
-cabbre D :bd
+cabbre D :bdelete 
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
 cabbre gd Git diff
@@ -14,6 +14,7 @@ cabbre gs Git status
 cabbre gw cl <BAR> w <BAR> Git Commit -a -m % <BAR> Git push 
 cabbre kara edit ~/github.com/xiote/karabiner/karabiner.json
 cabbre N enew
+cabbre me %
 cabbre memo edit ~/Dropbox/wiki/memo/index.md
 cabbre oswk edit ~/Dropbox/wiki/os/index.md 
 cabbre rl VimwikiRenameLink
@@ -22,6 +23,7 @@ cabbre sudotee sudo tee % > /dev/null
 cabbre tc tabclose
 cabbre tn tabnew 
 cabbre T tabnew 
+cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/Dropbox/wiki/vim/index.md 
 cabbre vrc edit ~/github.com/xiote/vim/.vimrc
 cabbre wkall ~/Dropbox/wiki/*/*
