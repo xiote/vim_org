@@ -2,7 +2,7 @@ autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 cabbre cl !clear
-cabbre D :bdelete 
+cabbre D bdelete 
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
 cabbre gd Git diff
@@ -11,7 +11,6 @@ cabbre gl Git Log
 cabbre gpl Git pull
 cabbre gps Git push
 cabbre gs Git status
-cabbre gw cl <BAR> w <BAR> Git Commit -a -m % <BAR> Git push 
 cabbre kara edit ~/github.com/xiote/karabiner/karabiner.json
 cabbre N enew
 cabbre me %
@@ -19,6 +18,7 @@ cabbre memo edit ~/Dropbox/wiki/memo/index.md
 cabbre oswk edit ~/Dropbox/wiki/os/index.md 
 cabbre rl VimwikiRenameLink
 cabbre rootwk edit ~/Dropbox/wiki/index.md 
+cabbre some source %
 cabbre sudotee sudo tee % > /dev/null
 cabbre tc tabclose
 cabbre tn tabnew 
