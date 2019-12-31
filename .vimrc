@@ -6,7 +6,7 @@ cabbre D bdelete
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
 cabbre gd Git diff
-cabbre gitwk edit ~/Dropbox/wiki/git/index.md 
+cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl Git Log
 cabbre gpl Git pull
 cabbre gps Git push
@@ -14,19 +14,19 @@ cabbre gs Git status
 cabbre kara edit ~/github.com/xiote/karabiner/karabiner.json
 cabbre N enew
 cabbre me %
-cabbre memo edit ~/Dropbox/wiki/memo/index.md
-cabbre oswk edit ~/Dropbox/wiki/os/index.md 
+cabbre memo edit ~/github.com/xiote/wiki/memo/index.md
+cabbre oswk edit ~/github.com/xiote/wiki/os/index.md 
 cabbre rl VimwikiRenameLink
-cabbre rootwk edit ~/Dropbox/wiki/index.md 
+cabbre rootwk edit ~/github.com/xiote/wiki/index.md 
 cabbre some source %
 cabbre sudotee sudo tee % > /dev/null
 cabbre tc tabclose
 cabbre tn tabnew 
 cabbre T tabnew 
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
-cabbre vimwk edit ~/Dropbox/wiki/vim/index.md 
+cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
 cabbre vrc edit ~/github.com/xiote/vim/.vimrc
-cabbre wkall ~/Dropbox/wiki/*/*
+cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre zrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
@@ -37,7 +37,7 @@ iabbre ``` ```<CR>```<UP>
 
 let g:vimwiki_list = [
     \{
-    \    'path': '~/Dropbox/wiki/',
+    \    'path': '~/github.com/xiote/wiki/',
     \    'ext' : '.md'
     \}
 \]
