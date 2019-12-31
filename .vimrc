@@ -27,7 +27,7 @@ cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
 cabbre vrc edit ~/github.com/xiote/vim/.vimrc
 cabbre wkall ~/github.com/xiote/wiki/*/*
-cabbre zrc edit ~/github.com/xiote/zsh/.zshrc
+cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
 
