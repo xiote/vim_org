@@ -39,6 +39,7 @@ let g:vimwiki_list = [
     \}
 \]
 
+nmap \w Gonew<ESC><Plug>VimwikiFollowLink<Plug>VimwikiFollowLink\t
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
@@ -46,7 +47,6 @@ nnoremap Q gQ
 nnoremap Z :w<CR>
 
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
-noremap \w Gonew<CR><C-v><CR> 
 
 runtime macros/matchit.vim
 
