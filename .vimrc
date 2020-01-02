@@ -10,6 +10,7 @@ cabbre gl Git Log
 cabbre gpl Git pull
 cabbre gps Git push
 cabbre gs Git status
+cabbre gw w <BAR> Git add % <BAR> Git Commit -a -m %
 cabbre kara edit ~/github.com/xiote/karabiner/karabiner.json
 cabbre me %
 cabbre memo edit ~/github.com/xiote/wiki/memo/index.md
