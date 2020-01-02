@@ -60,7 +60,6 @@ set hlsearch
 set incsearch
 set nocompatible
 set nowrapscan
-set number relativenumber
 set shiftwidth=4 
 set softtabstop=4 
 
