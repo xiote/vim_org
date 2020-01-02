@@ -4,7 +4,7 @@ autocmd InsertLeave * set cul
 cabbre cl !clear
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
-cabbre gcp <BAR> Git Commit -a -m % <BAR> Git pull <BAR> Git push
+cabbre gcp Git Commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl Git Log
@@ -24,6 +24,7 @@ cabbre tn tabnew
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
 cabbre vrc edit ~/github.com/xiote/vim/.vimrc
+cabbre wgcp w <BAR> Git Commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source %
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
