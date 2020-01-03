@@ -28,7 +28,7 @@ cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source %
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 
-command! -nargs=1 Echo :let @a=Echo(<f-args>)
+command! -nargs=1 Echo :let @"=Echo(<f-args>)
 command! -nargs=1 GetLink :let @"=GetLink(<f-args>)
 
 filetype plugin on
