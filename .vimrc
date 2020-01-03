@@ -7,7 +7,7 @@ cabbre gc Git Commit -a -m %
 cabbre gcp Git Commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
-cabbre gl Git Log
+cabbre gl GetLink
 cabbre gpl Git pull
 cabbre gps Git push
 cabbre gs Git status
