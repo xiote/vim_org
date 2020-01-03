@@ -28,7 +28,18 @@ cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source %
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 
+command! -nargs=1 Echo :let @a=Echo(<f-args>)
+command! -nargs=1 GetLink :let @a=GetLink(<f-args>)
+
 filetype plugin on
+
+function! Echo(message)
+    return a:message
+endfunction
+
+function! GetLink(url)
+    return a:url
+endfunction
 
 hi TabLineFill term=bold cterm=bold ctermbg=0
 
@@ -47,7 +58,7 @@ nnoremap o o<Esc>
 nnoremap O O<Esc>
 nnoremap Q gQ
 nnoremap Z :w<CR>
-nnoremap A :let @a=system("ls -l")<CR>
+nnoremap A :let @a=@%
 
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 
