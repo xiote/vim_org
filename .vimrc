@@ -28,6 +28,7 @@ cabbre wgcp w <BAR> !clear; Git commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source %
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
+cabbre snum set number! relativenumber!
 
 command! -nargs=1 Echo :let @"=Echo(<f-args>)
 command! -nargs=1 GetLink :let @"=GetLink(<f-args>)
