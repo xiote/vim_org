@@ -47,6 +47,7 @@ nnoremap o o<Esc>
 nnoremap O O<Esc>
 nnoremap Q :q<CR>
 nnoremap Z :w<CR>
+nnoremap A :let @a=system("ls -l")<CR>
 
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 
