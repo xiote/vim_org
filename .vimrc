@@ -2,6 +2,7 @@ autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 cabbre cl !clear
+cabbre fd bdelete
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
 cabbre gcp !clear ; Git commit -a -m % <BAR> Git pull <BAR> Git push
