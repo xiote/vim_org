@@ -2,9 +2,9 @@ autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 cabbre cl !clear
-cabbre D bdelete 
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
+cabbre gcp Git Commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl Git Log
@@ -12,7 +12,6 @@ cabbre gpl Git pull
 cabbre gps Git push
 cabbre gs Git status
 cabbre kara edit ~/github.com/xiote/karabiner/karabiner.json
-cabbre N enew
 cabbre me %
 cabbre memo edit ~/github.com/xiote/wiki/memo/index.md
 cabbre oswk edit ~/github.com/xiote/wiki/os/index.md 
@@ -22,12 +21,12 @@ cabbre some source %
 cabbre sudotee sudo tee % > /dev/null
 cabbre tc tabclose
 cabbre tn tabnew 
-cabbre T tabnew 
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
-cabbre vrc edit ~/github.com/xiote/vim/.vimrc
+cabbre wgcp w <BAR> Git Commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre wkall ~/github.com/xiote/wiki/*/*
-cabbre zrc edit ~/github.com/xiote/zsh/.zshrc
+cabbre ws w <BAR> source %
+cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 
 filetype plugin on
 
@@ -42,10 +41,11 @@ let g:vimwiki_list = [
     \}
 \]
 
+nmap \w Gonew<ESC><Plug>VimwikiFollowLink<Plug>VimwikiFollowLink\t
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
-nnoremap Q :q<CR>
+nnoremap Q gQ
 nnoremap Z :w<CR>
 nnoremap A :let @a=system("ls -l")<CR>
 
@@ -61,7 +61,6 @@ set hlsearch
 set incsearch
 set nocompatible
 set nowrapscan
-set number
 set shiftwidth=4 
 set softtabstop=4 
 
