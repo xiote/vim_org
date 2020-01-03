@@ -4,7 +4,7 @@ autocmd InsertLeave * set cul
 cabbre cl !clear
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
-cabbre gcp Git Commit -a -m % <BAR> Git pull <BAR> Git push
+cabbre gcp Git Commit -a -m % <BAR> Git pull <BAR> Git push <BAR> !clear
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl GetLink
@@ -58,7 +58,6 @@ nnoremap o o<Esc>
 nnoremap O O<Esc>
 nnoremap Q gQ
 nnoremap Z :w<CR>
-nnoremap A :let @a=@%
 
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 
