@@ -4,7 +4,7 @@ autocmd InsertLeave * set cul
 cabbre cl !clear
 cabbre ga Git add %
 cabbre gc Git Commit -a -m %
-cabbre gcp cl <BAR> Git commit -a -m % <BAR> Git pull <BAR> Git push
+cabbre gcp !clear <BAR> Git commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl GetLink
