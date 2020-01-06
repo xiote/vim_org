@@ -40,8 +40,12 @@ function! Echo(message)
 endfunction
 
 function! GetLink(url)
-    return a:url
+    let title = system("wget --quiet -O - " . a:url . " | sed -n -e 's!.*<title>\\(.*\\)</title>.*!\\1!p'")
+    let title = substitute(title,"\n",'','g')
+    return "[" . title . "](" . a:url . ")"
 endfunction
+
+
 
 function! ClearScreen()
     :silent !clear
