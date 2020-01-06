@@ -32,8 +32,8 @@ cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a -m % <BAR> redraw!
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
-command! -nargs=1 Echo :let @"=Echo(<f-args>)
 
+command! -nargs=1 Echo :let @"=Echo(<f-args>)
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
 filetype plugin on
