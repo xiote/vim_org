@@ -32,8 +32,8 @@ cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source %
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
-
 command! -nargs=1 Echo :let @"=Echo(<f-args>)
+
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
 filetype plugin on
@@ -41,7 +41,6 @@ filetype plugin on
 function! Echo(message)
     return a:message
 endfunction
-
 
 function! ClearScreen()
     silent !clear
@@ -64,12 +63,12 @@ let g:vimwiki_list = [
 \]
 
 nmap \w Gonew<ESC>:VimwikiFollowLink<CR>:VimwikiFollowLink<CR>\t
+
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
 nnoremap Q gQ
 nnoremap Z :w<CR>
-
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 
 runtime macros/matchit.vim
