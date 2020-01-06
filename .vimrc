@@ -5,7 +5,7 @@ cabbre cl ClearScreen
 cabbre fd bdelete
 cabbre ga Git add %
 cabbre gc Git commit -a -m %
-cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m %
+cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl GetLink
