@@ -31,20 +31,12 @@ cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
 
 command! -nargs=1 Echo :let @"=Echo(<f-args>)
-command! -nargs=1 GetLink :let @"=GetLink(<f-args>)
 
 filetype plugin on
 
 function! Echo(message)
     return a:message
 endfunction
-
-function! GetLink(url)
-    let title = system("wget --quiet -O - " . a:url . " | sed -n -e 's!.*<title>\\(.*\\)</title>.*!\\1!p'")
-    let title = substitute(title,"\n",'','g')
-    return "[" . title . "](" . a:url . ")"
-endfunction
-
 
 
 function! ClearScreen()
