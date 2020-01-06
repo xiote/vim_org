@@ -24,7 +24,7 @@ cabbre tc tabclose
 cabbre tn tabnew 
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
-cabbre wgcp w <BAR> ClearScreen <BAR> Git commit -a -m % <BAR> Git pull <BAR> Git push
+cabbre wgcp w <BAR> call ClearScreen() <BAR> Git commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source %
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
