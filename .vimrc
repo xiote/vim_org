@@ -87,5 +87,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+source $VIMRUNTIME/defaults.vim
+
 syntax on
 
