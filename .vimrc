@@ -27,6 +27,8 @@ cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
+cabbre wa w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> redraw!
+cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a -m % <BAR> redraw!
 cabbre wgcp w <BAR> call ClearScreen() <BAR> Git commit -a -m % <BAR> Git pull <BAR> Git push
 cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source %
