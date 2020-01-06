@@ -1,7 +1,7 @@
 autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
-cabbre cl ClearScreen
+cabbre cl call ClearScreen()
 cabbre fd bdelete
 cabbre ga Git add %
 cabbre gc Git commit -a -m %
@@ -45,6 +45,7 @@ endfunction
 
 function! ClearScreen()
     :silent !clear
+    :redraw!
 endfunction
 
 hi TabLineFill term=bold cterm=bold ctermbg=0
