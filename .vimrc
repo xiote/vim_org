@@ -2,6 +2,7 @@ autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 cabbre cl call ClearScreen()
+cabbre df DiffOrig
 cabbre fd bdelete
 cabbre ga Git add %
 cabbre gc Git commit -a -m %
@@ -23,7 +24,6 @@ cabbre sudotee sudo tee %
 cabbre tc tabclose
 cabbre tn tabnew 
 cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
-cabbre vf VimwikiFollowLink
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
@@ -34,6 +34,7 @@ cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
 
 command! -nargs=1 Echo :let @"=Echo(<f-args>)
+command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
 filetype plugin on
 
@@ -90,4 +91,6 @@ set statusline+=%*
 source $VIMRUNTIME/defaults.vim
 
 syntax on
+
+
 
