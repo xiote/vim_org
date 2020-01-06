@@ -43,8 +43,8 @@ endfunction
 
 
 function! ClearScreen()
-    :silent !clear
-    :redraw!
+    silent !clear
+    redraw!
 endfunction
 
 hi TabLineFill term=bold cterm=bold ctermbg=0
