@@ -51,6 +51,10 @@ hi TabLineFill term=bold cterm=bold ctermbg=0
 
 iabbre ``` ```<CR>```<UP>
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 let g:vimwiki_list = [
     \{
     \    'path': '~/github.com/xiote/wiki/',
@@ -79,5 +83,9 @@ set nocompatible
 set nowrapscan
 set shiftwidth=4 
 set softtabstop=4 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 syntax on
+
