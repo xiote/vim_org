@@ -58,7 +58,7 @@ let g:vimwiki_list = [
     \}
 \]
 
-nmap \w Gonew<ESC><Plug>VimwikiFollowLink<Plug>VimwikiFollowLink\t
+"nmap \w Gonew<ESC><Plug>VimwikiFollowLink<Plug>VimwikiFollowLink\t
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
