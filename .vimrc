@@ -22,6 +22,7 @@ cabbre some source %
 cabbre sudotee sudo tee % > /dev/null
 cabbre tc tabclose
 cabbre tn tabnew 
+cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
 cabbre wgcp w <BAR> call ClearScreen() <BAR> Git commit -a -m % <BAR> Git pull <BAR> Git push
