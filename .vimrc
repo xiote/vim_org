@@ -19,10 +19,11 @@ cabbre oswk edit ~/github.com/xiote/wiki/os/index.md
 cabbre rl VimwikiRenameLink
 cabbre rootwk edit ~/github.com/xiote/wiki/index.md 
 cabbre some source %
-cabbre sudotee sudo tee % > /dev/null
+cabbre sudotee sudo tee % 
 cabbre tc tabclose
 cabbre tn tabnew 
 cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
+cabbre vf VimwikiFollowLink
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
