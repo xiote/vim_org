@@ -10,6 +10,8 @@ cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git 
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl GetLink
+cabbre gorun GoRun
+cabbre gobuild GoBuild
 cabbre gu Git pull
 cabbre gp Git push
 cabbre gs Git status
