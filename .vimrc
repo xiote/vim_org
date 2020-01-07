@@ -2,8 +2,8 @@ autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 cabbre cl call ClearScreen()
+cabbre del bdelete
 cabbre df DiffOrig
-cabbre fd bdelete
 cabbre ga Git add %
 cabbre gc Git commit -a -m %
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
@@ -53,6 +53,7 @@ endfunction
 hi TabLineFill term=bold cterm=bold ctermbg=0
 
 iabbre ``` ```<CR>```<UP>
+iabbre c cabbre
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
