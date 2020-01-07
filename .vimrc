@@ -75,15 +75,8 @@ nnoremap Z :w<CR>
 noremap \a A$<Esc>r
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 
-function! InsertSingle()
-  sleep 120m|let l:a = getchar(0)
-  if l:a != 0
-    silent! exec "normal a" . nr2char(l:a)
-  else
-    silent! exec "normal a "
-  endif
-endfunction
-nnoremap <silent> <Space> :call InsertSingle()<CR>
+nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
+nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 
 runtime macros/matchit.vim
 
