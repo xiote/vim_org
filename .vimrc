@@ -68,8 +68,6 @@ let g:vimwiki_list = [
 
 nmap \w Gonew<ESC>:VimwikiFollowLink<CR>:VimwikiFollowLink<CR>\t
 
-nnoremap \s :exec "normal i".nr2char(getchar())."\e"<CR>
-nnoremap \S :exec "normal a".nr2char(getchar())."\e"<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
