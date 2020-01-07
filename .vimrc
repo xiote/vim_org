@@ -72,6 +72,7 @@ nnoremap o o<Esc>
 nnoremap O O<Esc>
 nnoremap Q gQ
 nnoremap Z :w<CR>
+noremap \a A$<Esc>R
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
 
 runtime macros/matchit.vim
