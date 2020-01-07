@@ -12,6 +12,7 @@ cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md
 cabbre gl GetLink
 cabbre gorun GoRun
 cabbre gobuild GoBuild
+cabbre gb GoBuild
 cabbre gu Git pull
 cabbre gp Git push
 cabbre gs Git status
