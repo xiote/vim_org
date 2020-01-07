@@ -72,9 +72,18 @@ nnoremap o o<Esc>
 nnoremap O O<Esc>
 nnoremap Q gQ
 nnoremap Z :w<CR>
-nmap <silent> ,s "=nr2char(getchar())<cr>P
 noremap \a A$<Esc>r
 noremap \t I# title<CR><CR>## See also<CR><CR><ESC>:1<CR>:s/title/
+
+function! InsertSingle()
+  sleep 120m|let l:a = getchar(0)
+  if l:a != 0
+    silent! exec "normal a" . nr2char(l:a)
+  else
+    silent! exec "normal a "
+  endif
+endfunction
+nnoremap <silent> <Space> :call InsertSingle()<CR>
 
 runtime macros/matchit.vim
 
