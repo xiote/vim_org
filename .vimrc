@@ -51,11 +51,11 @@ command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
 function! GitCommitMessage(...)
     let path = get(a:, 1, 0)
     let message = get(a:, 2, 0)
-    if message
+        echom path
         echom message
+    if message
         execute 'Git commit -a -m' message
     else
-        echom path
         execute 'Git commit -a -m' path
     endif
 endfunction
