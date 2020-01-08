@@ -53,7 +53,7 @@ function! ClearScreen()
     redraw!
 endfunction
 
-nnoremap <leader>* :let @/ = '\<'.expand("<cword>").'\>'<cr>:set hlsearch<cr>:echo<cr> 
+nnoremap <leader>* :let @/ = '\<'.expand("<cword>").'\>':echo<cr> 
 
 
 
