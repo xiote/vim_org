@@ -46,16 +46,17 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | d
 
 filetype plugin on
 
+
 command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
 
 function! GitCommitMessage(...)
     let path = get(a:, 1, 0)
     let message = get(a:, 2, 0)
     if message
-        echo message
+        echom message
         execute 'Git commit -a -m' message
     else
-        echo path
+        echom path
         execute 'Git commit -a -m' path
     endif
 endfunction
@@ -109,8 +110,8 @@ set nocompatible
 set nowrapscan
 set shiftwidth=4 
 set softtabstop=4 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 syntax on
