@@ -42,7 +42,6 @@ cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR>
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
 
-
 command! -nargs=1 Echo :let @"=Echo(<f-args>)
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
