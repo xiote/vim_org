@@ -37,7 +37,8 @@ cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
 cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a -m % <BAR> redraw!
 cabbre wkall ~/github.com/xiote/wiki/*/*
-cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommitMessage % <BAR> redraw!
+"cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommitMessage % <BAR> redraw!
+cabbre ws w <BAR> source % <BAR> silent Git add % <BAR> GitCommitMessage % 
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
 
@@ -47,6 +48,7 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | d
 filetype plugin on
 
 command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
+
 
 function! GitCommitMessage(path,...)
     if a:0 > 0
