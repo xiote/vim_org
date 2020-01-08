@@ -59,6 +59,7 @@ iabbre ``` ```<CR>```<UP>
 iabbre c cabbre
 
 let g:cursorword = 1
+let b:cursorword = 0
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
