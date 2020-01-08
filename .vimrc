@@ -84,7 +84,7 @@ runtime macros/matchit.vim
 
 set autochdir
 set autowrite
-set cul
+"set cul
 set expandtab
 set hlsearch
 set incsearch
