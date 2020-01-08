@@ -46,7 +46,6 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | d
 
 filetype plugin on
 
-
 command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
 
 function! GitCommitMessage(...)
