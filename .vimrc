@@ -9,7 +9,7 @@ cabbre gc Git commit -a -m %
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
-cabbre gl GetLink
+cabbre gl Git log
 cabbre gorun GoRun
 cabbre gobuild GoBuild
 cabbre gb GoBuild
@@ -28,6 +28,7 @@ cabbre some source %
 cabbre sudotee sudo tee % 
 cabbre ss suspend
 cabbre tc tabclose
+cabbre tl GetLink
 cabbre tn tabnew 
 cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
@@ -37,7 +38,6 @@ cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a 
 cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommitMessage % <BAR> redraw!
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
-
 cabbre snum set number! relativenumber!
 
 command! -nargs=1 Echo :let @"=Echo(<f-args>)
