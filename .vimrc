@@ -89,8 +89,8 @@ set autochdir
 set autowrite
 "set cul
 set expandtab
-"set hlsearch
-"set incsearch
+set hlsearch
+set incsearch
 set nocompatible
 set nowrapscan
 set shiftwidth=4 
