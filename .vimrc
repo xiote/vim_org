@@ -5,8 +5,8 @@ cabbre cl call ClearScreen()
 cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
-cabbre gc Git commit -a -m %
-cabbre gcm GitCommitMessage
+cabbre gcm Git commit --amend
+cabbre gc GitCommit %
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
@@ -35,9 +35,9 @@ cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
-cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommitMessge %
+cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommit %
 cabbre wkall ~/github.com/xiote/wiki/*/*
-cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommitMessage % 
+cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommit % 
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
 
@@ -46,10 +46,11 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | d
 
 filetype plugin on
 
-command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
+
+command! -nargs=+ GitCommit :call GitCommit(<f-args>)
 
 
-function! GitCommitMessage(path,...)
+function! GitCommit(path,...)
     if a:0 > 0
         " message
         execute 'Git commit -a -m' a:1
@@ -57,6 +58,17 @@ function! GitCommitMessage(path,...)
         execute 'Git commit -a -m' a:path
     endif
 endfunction
+
+function! GitCommit(path,...)
+    if a:0 > 0
+        " message
+        execute 'Git commit -a -m' a:1
+    else
+        execute 'Git commit -a -m' a:path
+    endif
+endfunction
+
+
 
 function! Echo(message)
     return a:message
