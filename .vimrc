@@ -53,6 +53,10 @@ function! ClearScreen()
     redraw!
 endfunction
 
+nnoremap <leader>* :let @/ = '\<'.expand("<cword>").'\>'<cr>:set hlsearch<cr>:echo<cr> 
+
+
+
 " Highlight all instances of word under cursor, when idle.
 " Useful when studying strange source code.
 " Type z/ to toggle highlighting on/off.
