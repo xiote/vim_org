@@ -48,14 +48,12 @@ filetype plugin on
 
 command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
 
-function! GitCommitMessage(...)
-    let path = a:1
-    let message = a:2
-
-    if empty(message)
-        execute 'Git commit -a -m' path
+function! GitCommitMessage(path,...)
+    if a:0 > 1
+        " message
+        execute 'Git commit -a -m' a:2
     else
-        execute 'Git commit -a -m' message
+        execute 'Git commit -a -m' a:path
     endif
 endfunction
 
