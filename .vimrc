@@ -48,7 +48,6 @@ filetype plugin on
 
 command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
 
-
 function! GitCommitMessage(path,...)
     if a:0 > 0
         " message
