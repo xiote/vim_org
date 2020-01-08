@@ -37,6 +37,7 @@ cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a 
 cabbre wkall ~/github.com/xiote/wiki/*/*
 cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommitMessage % <BAR> redraw!
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
+
 cabbre snum set number! relativenumber!
 
 command! -nargs=1 Echo :let @"=Echo(<f-args>)
