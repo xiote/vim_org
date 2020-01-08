@@ -6,6 +6,7 @@ cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
 cabbre gc Git commit -a -m %
+cabbre gcm GitCommitMessage
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
@@ -45,10 +46,16 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | d
 
 filetype plugin on
 
-command! -nargs=1 GitCommitMessage :call GitCommitMessage(<f-args>)
+command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
 
-function! GitCommitMessage(message)
-    execute 'Git commit -a -m' a:message
+function! GitCommitMessage(...)
+    let path = get(a:, 0, 0)
+    let message = get(a:, 1, 0)
+    if message
+        execute 'Git commit -a -m' message
+    else
+        execute 'Git commit -a -m' path
+    endif
 endfunction
 
 function! Echo(message)
