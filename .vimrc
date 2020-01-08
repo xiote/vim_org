@@ -53,8 +53,10 @@ function! GitCommitMessage(...)
     let path = get(a:, 0, 0)
     let message = get(a:, 1, 0)
     if message
+        echo message
         execute 'Git commit -a -m' message
     else
+        echo path
         execute 'Git commit -a -m' path
     endif
 endfunction
