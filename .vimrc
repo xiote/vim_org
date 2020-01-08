@@ -50,9 +50,9 @@ command! -nargs=+ GitCommitMessage :call GitCommitMessage(<f-args>)
 
 
 function! GitCommitMessage(path,...)
-    if a:0 > 1
+    if a:0 > 0
         " message
-        execute 'Git commit -a -m' a:2
+        execute 'Git commit -a -m' a:1
     else
         execute 'Git commit -a -m' a:path
     endif
