@@ -53,40 +53,14 @@ function! ClearScreen()
     redraw!
 endfunction
 
-nnoremap <leader>* :let @/ = '\<'.expand("<cword>").'\>'<cr>:echo<cr> 
-
-
-
-" Highlight all instances of word under cursor, when idle.
-" Useful when studying strange source code.
-" Type z/ to toggle highlighting on/off.
-nnoremap z/ :if AutoHighlightToggle()<Bar>set hls<Bar>endif<CR>
-function! AutoHighlightToggle()
-    let @/ = ''
-    if exists('#auto_highlight')
-        au! auto_highlight
-        augroup! auto_highlight
-        setl updatetime=4000
-        echo 'Highlight current word: off'
-        return 0
-    else
-        augroup auto_highlight
-            au!
-            au CursorHold * let @/ = '\V\<'.escape(expand('<cword>'), '\').'\>'
-        augroup end
-        setl updatetime=100
-        echo 'Highlight current word: ON'
-        return 1
-    endif
-endfunction
 hi TabLineFill term=bold cterm=bold ctermbg=0
 
 iabbre ``` ```<CR>```<UP>
 iabbre c cabbre
 
-let g:cursorword = 0
-let b:cursorword = 0
-let g:cursorword_highlight = 0
+let g:cursorword = 1
+let b:cursorword = 1
+let g:cursorword_highlight = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -113,7 +87,7 @@ runtime macros/matchit.vim
 
 set autochdir
 set autowrite
-"set cul
+set cul
 set expandtab
 set hlsearch
 set incsearch
