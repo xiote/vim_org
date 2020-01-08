@@ -35,7 +35,7 @@ cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
 cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a -m % <BAR> redraw!
 cabbre wkall ~/github.com/xiote/wiki/*/*
-cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a -m % <BAR> redraw!
+cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommitMessage % <BAR> redraw!
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
 
