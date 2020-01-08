@@ -47,6 +47,7 @@ filetype plugin on
 command! -nargs=1 GitCommitMessage :call GitCommitMessage(<f-args>)
 
 function! GitCommitMessage(message)
+
     Git commit -a -m a:message
 endfunction
 
