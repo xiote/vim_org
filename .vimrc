@@ -6,8 +6,6 @@ cabbre cp !cp %
 cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
-cabbre gb Git branch
-cabbre gbd Git branch -d
 cabbre gc GitCommit %
 cabbre gcm Git commit --amend
 cabbre gch Git checkout
@@ -18,6 +16,8 @@ cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md
 cabbre gl Git log
 cabbre gorun GoRun
 cabbre gobuild GoBuild
+cabbre gr Git branch
+cabbre grd Git branch -d
 cabbre ob GoBuild
 cabbre gu Git pull
 cabbre gp Git push
