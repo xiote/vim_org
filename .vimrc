@@ -14,11 +14,11 @@ cabbre git Git
 cabbre gitbranch Git branch
 cabbre gitbname Git rev-parse --abbrev-ref HEAD
 cabbre gitbranchd GitBranchD
-cabbre gitcheckout GitCheckout
-cabbre gitcheckoutb GitCheckoutb
-cabbre gitcheckoutbn Git checkout -b new
-cabbre gitcheckoutm Git checkout master
-cabbre gitcheckoutn Git checkout new
+cabbre gitcout GitCheckout
+cabbre gitcoutb GitCheckoutb
+cabbre gitcoutbn Git checkout -b new
+cabbre gitcoutm Git checkout master
+cabbre gitcoutn Git checkout new
 cabbre gpu Git push --set-upstream origin
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
