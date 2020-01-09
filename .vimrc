@@ -5,7 +5,7 @@ cabbre cl call ClearScreen()
 cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
-cabbre gb <Silent> Git branch
+cabbre gb silent Git branch
 cabbre gc GitCommit %
 cabbre gcm Git commit --amend
 cabbre gch Git checkout
