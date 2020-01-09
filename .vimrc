@@ -2,6 +2,7 @@ autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 cabbre cl call ClearScreen()
+cabbre cp !cp % 
 cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
