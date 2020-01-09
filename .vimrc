@@ -6,8 +6,9 @@ cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
 cabbre gb Git branch
-cabbre gcm Git commit --amend
 cabbre gc GitCommit %
+cabbre gcm Git commit --amend
+cabbre gch Git checkout
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
