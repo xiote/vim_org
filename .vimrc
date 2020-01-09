@@ -7,21 +7,24 @@ cabbre cpkara !cp % ~/.config/karabiner/karabiner.json
 cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
-cabbre gc GitCommit %
-cabbre gcm Git commit --amend
-cabbre gchk Git checkout
-cabbre gchkb Git checkout -b
-cabbre gchkm Git checkout master
-cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
-cabbre gpup Git push --set-upstream origin
+cabbre gc Git commit -a -m %
+cabbre gcm Git commit -a 
+cabbre gcam Git commit -a --amend
+cabbre git Git
+cabbre gitbranch Git branch
+cabbre gitbranchd GitBranchD
+cabbre gitcheckout GitCheckout
+cabbre gitcheckoutb GitCheckoutb
+cabbre gitcheckoutbn Git checkout -b  new
+cabbre gitcheckoutm Git checkout master
+cabbre gitcheckoutn Git checkout new
+cabbre gpu Git push --set-upstream origin
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl Git log
 cabbre gorun GoRun
 cabbre gobuild GoBuild
-cabbre gr Git branch
-cabbre grd Git branch -d
-cabbre ob GoBuild
+cabbre gob GoBuild
 cabbre gu Git pull
 cabbre gp Git push
 cabbre gs Git status
@@ -43,9 +46,9 @@ cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
 cabbre vimwk edit ~/github.com/xiote/wiki/vim/index.md 
-cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommit %
+cabbre wc w <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a -m %
 cabbre wkall ~/github.com/xiote/wiki/*/*
-cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> GitCommit % 
+cabbre ws w <BAR> source % <BAR> call ClearScreen() <BAR> silent Git add % <BAR> Git commit -a -m  % 
 cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
 
@@ -55,14 +58,48 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | d
 
 filetype plugin on
 
-function! GitCommit(path,...)
-    if a:0 > 0
-        " message
-        execute 'Git commit -a -m' a:1
-    else
-        execute 'Git commit -a -m' a:path
-    endif
+"function! Demo()
+"  let curline = getline('.')
+"  call inputsave()
+"  let name = input('Enter name: ')
+"  call inputrestore()
+"  call setline('.', curline . ' ' . name)
+"endfunction
+
+
+command! -nargs=* GitCheckout :call GitCheckout(<f-args>)
+command! -nargs=* GitCheckoutb :call GitCheckoutb(<f-args>)
+
+function! GitCheckout()
+    call inputsave()
+    let branch = input('')
+    call inputrestore()
+    execute 'Git checkout' branch
 endfunction
+
+function! GitCheckoutb()
+    call inputsave()
+    let branch = input('')
+    call inputrestore()
+    execute 'Git checkout -b' branch
+endfunction
+
+function! GitBranchD()
+    call inputsave()
+    let branch = input('')
+    call inputrestore()
+    execute 'Git branch -D' branch
+endfunction
+
+
+"function! GitCommit(path,...)
+"    if a:0 > 0
+"        " message
+"        execute 'Git commit -a -m' a:1
+"    else
+"        execute 'Git commit -a -m' a:path
+"    endif
+"endfunction
 
 function! Echo(message)
     return a:message
