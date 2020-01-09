@@ -12,6 +12,7 @@ cabbre gcm Git commit --amend
 cabbre gch Git checkout
 cabbre gchm Git checkout master
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
+cabbre gpu Git push --set-upstream origin
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl Git log
