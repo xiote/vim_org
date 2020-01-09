@@ -69,7 +69,7 @@ filetype plugin on
 
 command! -nargs=* GitCheckout :call GitCheckout(<f-args>)
 command! -nargs=* GitCheckoutb :call GitCheckoutb(<f-args>)
-command! -nargs=* GitBranchD :call GitCheckoutD(<f-args>)
+command! -nargs=* GitBranchD :call GitBranchD(<f-args>)
 
 function! GitCheckout()
     call inputsave()
