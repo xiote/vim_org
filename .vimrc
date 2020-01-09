@@ -10,6 +10,7 @@ cabbre ga Git add %
 cabbre gc GitCommit %
 cabbre gcm Git commit --amend
 cabbre gchk Git checkout
+cabbre gchkb Git checkout -b
 cabbre gchkm Git checkout master
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
 cabbre gpup Git push --set-upstream origin
@@ -19,7 +20,6 @@ cabbre gl Git log
 cabbre gorun GoRun
 cabbre gobuild GoBuild
 cabbre gr Git branch
-cabbre grb Git branch -b
 cabbre grd Git branch -d
 cabbre ob GoBuild
 cabbre gu Git pull
