@@ -16,7 +16,7 @@ cabbre gitbname Git rev-parse --abbrev-ref HEAD
 cabbre gitbranchd GitBranchD
 cabbre gitcheckout GitCheckout
 cabbre gitcheckoutb GitCheckoutb
-cabbre gitcheckoutbn Git checkout -b  new
+cabbre gitcheckoutbn Git checkout -b new
 cabbre gitcheckoutm Git checkout master
 cabbre gitcheckoutn Git checkout new
 cabbre gpu Git push --set-upstream origin
