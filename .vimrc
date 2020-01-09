@@ -9,8 +9,8 @@ cabbre df DiffOrig
 cabbre ga Git add %
 cabbre gc GitCommit %
 cabbre gcm Git commit --amend
-cabbre gch Git checkout
-cabbre gchm Git checkout master
+cabbre gchk Git checkout
+cabbre gchkm Git checkout master
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
 cabbre gpup Git push --set-upstream origin
 cabbre gd Git diff
