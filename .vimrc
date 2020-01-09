@@ -11,14 +11,35 @@ cabbre gc Git commit -a -m %
 cabbre gcm Git commit -a 
 cabbre gcam Git commit -a --amend
 cabbre git Git
+
 cabbre gitbranch Git branch
-cabbre gitbname Git rev-parse --abbrev-ref HEAD
+cabbre listbranch Git branch
+cabbre lbr Git branch
+
+cabbre currentbranch Git rev-parse --abbrev-ref HEAD
+cabbre currbr Git rev-parse --abbrev-ref HEAD
+cabbre cbr Git rev-parse --abbrev-ref HEAD
+
 cabbre gitbranchd GitBranchD
-cabbre gitcout GitCheckout
-cabbre gitcoutb GitCheckoutb
-cabbre gitcoutbn Git checkout -b new
-cabbre gitcoutm Git checkout master
-cabbre gitcoutn Git checkout new
+cabbre deletebranch GitBranchD
+cabbre dbr GitBranchD
+
+cabbre gitcheckout GitCheckout
+cabbre switchbranch GitCheckout
+cabbre sbr GitCheckout
+cabbre gitcheckoutm Git checkout master
+cabbre switchmasterbranch Git checkout master
+cabbre smbr Git checkout master
+cabbre gitcheckoutn Git checkout new
+cabbre switchnewbranch Git checkout new
+cabbre snbr Git checkout new
+
+cabbre gitcheckoutb GitCheckoutb
+cabbre newbranch GitCheckoutb
+cabbre nbr GitCheckoutb
+cabbre gitcheckoutbn Git checkout -b new
+cabbre newnewbranch Git checkout -b new
+
 cabbre gpu Git push --set-upstream origin
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
