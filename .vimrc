@@ -5,6 +5,7 @@ cabbre cl call ClearScreen()
 cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
+cabbre gb Git branch
 cabbre gcm Git commit --amend
 cabbre gc GitCommit %
 cabbre gcp call ClearScreen() <BAR> Git pull <BAR> Git commit -a -m % <BAR> Git push
