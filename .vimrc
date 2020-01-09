@@ -12,7 +12,7 @@ cabbre gcm Git commit -a
 cabbre gcam Git commit -a --amend
 cabbre git Git
 cabbre gitbranch Git branch
-cabbre gitbranchname git rev-parse --abbrev-ref HEAD
+cabbre gitbranchname Git rev-parse --abbrev-ref HEAD
 cabbre gitbranchd GitBranchD
 cabbre gitcheckout GitCheckout
 cabbre gitcheckoutb GitCheckoutb
