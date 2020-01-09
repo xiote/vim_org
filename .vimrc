@@ -19,6 +19,7 @@ cabbre gl Git log
 cabbre gorun GoRun
 cabbre gobuild GoBuild
 cabbre gr Git branch
+cabbre grb Git branch -b
 cabbre grd Git branch -d
 cabbre ob GoBuild
 cabbre gu Git pull
