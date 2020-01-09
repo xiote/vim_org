@@ -42,14 +42,11 @@ cabbre zshrc edit ~/github.com/xiote/zsh/.zshrc
 cabbre snum set number! relativenumber!
 
 command! -nargs=1 Echo :let @"=Echo(<f-args>)
+command! -nargs=+ GitCommit :call GitCommit(<f-args>)
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
 filetype plugin on
 
-
-command! -nargs=+ GitCommit :call GitCommit(<f-args>)
-
-
 function! GitCommit(path,...)
     if a:0 > 0
         " message
@@ -58,17 +55,6 @@ function! GitCommit(path,...)
         execute 'Git commit -a -m' a:path
     endif
 endfunction
-
-function! GitCommit(path,...)
-    if a:0 > 0
-        " message
-        execute 'Git commit -a -m' a:1
-    else
-        execute 'Git commit -a -m' a:path
-    endif
-endfunction
-
-
 
 function! Echo(message)
     return a:message
@@ -119,8 +105,8 @@ set nocompatible
 set nowrapscan
 set shiftwidth=4 
 set softtabstop=4 
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 syntax on
