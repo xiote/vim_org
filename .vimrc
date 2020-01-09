@@ -25,7 +25,7 @@ cabbre memo edit ~/github.com/xiote/wiki/memo/index.md
 cabbre ne bn
 cabbre pr bp
 cabbre oswk edit ~/github.com/xiote/wiki/os/index.md 
-cabbre rd redraw!
+cabbre dd redraw!
 cabbre rl VimwikiRenameLink
 cabbre rootwk edit ~/github.com/xiote/wiki/index.md 
 cabbre some source %
