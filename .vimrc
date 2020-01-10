@@ -25,14 +25,14 @@ cabbre deletebranch GitBranchD
 cabbre dbr GitBranchD
 
 cabbre gitcheckout GitCheckout
-cabbre switchbranch GitCheckout
-cabbre sbr GitCheckout
+cabbre changebranch GitCheckout
+cabbre chbr GitCheckout
 cabbre gitcheckoutm Git checkout master
-cabbre switchmasterbranch Git checkout master
-cabbre smbr Git checkout master
+cabbre changemasterbranch Git checkout master
+cabbre chmbr Git checkout master
 cabbre gitcheckoutn Git checkout new
-cabbre switchnewbranch Git checkout new
-cabbre snbr Git checkout new
+cabbre changenewbranch Git checkout new
+cabbre chnbr Git checkout new
 
 cabbre gitcheckoutb GitCheckoutb
 cabbre newbranch GitCheckoutb
