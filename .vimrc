@@ -39,6 +39,7 @@ cabbre newbranch GitCheckoutb
 cabbre nbr GitCheckoutb
 cabbre gitcheckoutbn Git checkout -b new
 cabbre newnewbranch Git checkout -b new
+cabbre nnbr Git checkout -b new
 
 cabbre gpu Git push --set-upstream origin
 cabbre gd Git diff
