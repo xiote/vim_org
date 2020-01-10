@@ -1,3 +1,51 @@
+" https://github.com/junegunn/vim-plug
+"
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+"call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/pack/plugins/start')
+
+Plug 'fatih/vim-go'
+Plug 'https://tpope.io/vim/fugitive.git'
+Plug 'vim-syntastic/syntastic'
+Plug 'vimwiki/vimwiki'
+
+Plug 'xiote/link.vim'
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+"Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+"Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-master branch
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+"Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+"Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+"Plug '~/my-prototype-plugin'
+
+" Initialize plugin system
+call plug#end()
+
 autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
@@ -11,13 +59,38 @@ cabbre gc Git commit -a -m %
 cabbre gcm Git commit -a 
 cabbre gcam Git commit -a --amend
 cabbre git Git
+
 cabbre gitbranch Git branch
+cabbre listbranch Git branch
+cabbre lbr Git branch
+
+cabbre currentbranch Git rev-parse --abbrev-ref HEAD
+cabbre currbr Git rev-parse --abbrev-ref HEAD
+cabbre cbr Git rev-parse --abbrev-ref HEAD
+
 cabbre gitbranchd GitBranchD
+cabbre deletebranch GitBranchD
+cabbre dbr GitBranchD
+cabbre deletenewbranch Git branch -D new
+cabbre dnbr Git branch -D new
+
 cabbre gitcheckout GitCheckout
-cabbre gitcheckoutb GitCheckoutb
-cabbre gitcheckoutbn Git checkout -b  new
+cabbre changebranch GitCheckout
+cabbre chbr GitCheckout
 cabbre gitcheckoutm Git checkout master
+cabbre changemasterbranch Git checkout master
+cabbre chmbr Git checkout master
 cabbre gitcheckoutn Git checkout new
+cabbre changenewbranch Git checkout new
+cabbre chnbr Git checkout new
+
+cabbre gitcheckoutb GitCheckoutb
+cabbre newbranch GitCheckoutb
+cabbre nbr GitCheckoutb
+cabbre gitcheckoutbn Git checkout -b new
+cabbre newnewbranch Git checkout -b new
+cabbre nnbr Git checkout -b new
+
 cabbre gpu Git push --set-upstream origin
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
@@ -42,6 +115,9 @@ cabbre ss suspend
 cabbre tc tabclose
 cabbre tl GetLink
 cabbre tn tabnew 
+cabbre plugupdate PlugUpdate
+cabbre updateplug PlugUpdate
+cabbre up PlugUpdate
 cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
