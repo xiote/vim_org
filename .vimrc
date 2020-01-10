@@ -23,6 +23,8 @@ cabbre cbr Git rev-parse --abbrev-ref HEAD
 cabbre gitbranchd GitBranchD
 cabbre deletebranch GitBranchD
 cabbre dbr GitBranchD
+cabbre deletenewbranch Git branch -D new
+cabbre dnbr Git branch -D new
 
 cabbre gitcheckout GitCheckout
 cabbre changebranch GitCheckout
