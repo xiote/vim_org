@@ -62,34 +62,34 @@ cabbre git Git
 
 cabbre gitbranch Git branch
 cabbre listbranch Git branch
-cabbre lbr Git branch
+cabbre lb Git branch
 
 cabbre currentbranch Git rev-parse --abbrev-ref HEAD
 cabbre currbr Git rev-parse --abbrev-ref HEAD
-cabbre cbr Git rev-parse --abbrev-ref HEAD
+cabbre cb Git rev-parse --abbrev-ref HEAD
 
 cabbre gitbranchd GitBranchD
 cabbre deletebranch GitBranchD
-cabbre dbr GitBranchD
+cabbre db GitBranchD
 cabbre deletenewbranch Git branch -D new
-cabbre dnbr Git branch -D new
+cabbre dnb Git branch -D new
 
 cabbre gitcheckout GitCheckout
 cabbre changebranch GitCheckout
-cabbre chbr GitCheckout
+cabbre chb GitCheckout
 cabbre gitcheckoutm Git checkout master
 cabbre changemasterbranch Git checkout master
-cabbre chmbr Git checkout master
+cabbre chmb Git checkout master
 cabbre gitcheckoutn Git checkout new
 cabbre changenewbranch Git checkout new
-cabbre chnbr Git checkout new
+cabbre chnb Git checkout new
 
 cabbre gitcheckoutb GitCheckoutB
 cabbre newbranch GitCheckoutB
-cabbre nbr GitCheckoutB
+cabbre nb GitCheckoutB
 cabbre gitcheckoutbn Git checkout -B new
 cabbre newnewbranch Git checkout -B new
-cabbre nnbr Git checkout -B new
+cabbre nnb Git checkout -B new
 
 cabbre gitcheckoutcurrentfile Git checkout -- %
 cabbre restoreme Git checkout -- %
