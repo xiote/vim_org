@@ -92,6 +92,7 @@ cabbre newnewbranch Git checkout -B new
 cabbre nnbr Git checkout -B new
 
 cabbre gpu Git push --set-upstream origin
+cabbre gpn Git push --set-upstream origin new
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl Git log
