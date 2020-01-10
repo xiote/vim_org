@@ -96,7 +96,7 @@ cabbre restoreme Git checkout -- %
 cabbre rsme Git checkout -- %
 
 cabbre gpu Git push --set-upstream origin
-cabbre gpn Git push --set-upstream origin new
+cabbre gpun Git push --set-upstream origin new
 cabbre gd Git diff
 cabbre gitwk edit ~/github.com/xiote/wiki/git/index.md 
 cabbre gl Git log
