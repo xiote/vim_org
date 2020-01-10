@@ -197,7 +197,6 @@ hi TabLineFill term=bold cterm=bold ctermbg=0
 iabbre ``` ```<CR>```<UP>
 iabbre c cabbre
 
-let g:cursorword_highlight = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
