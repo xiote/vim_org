@@ -84,12 +84,12 @@ cabbre gitcheckoutn Git checkout new
 cabbre changenewbranch Git checkout new
 cabbre chnbr Git checkout new
 
-cabbre gitcheckoutb GitCheckoutb
-cabbre newbranch GitCheckoutb
-cabbre nbr GitCheckoutb
-cabbre gitcheckoutbn Git checkout -b new
-cabbre newnewbranch Git checkout -b new
-cabbre nnbr Git checkout -b new
+cabbre gitcheckoutb GitCheckoutB
+cabbre newbranch GitCheckoutB
+cabbre nbr GitCheckoutB
+cabbre gitcheckoutbn Git checkout -B new
+cabbre newnewbranch Git checkout -B new
+cabbre nnbr Git checkout -B new
 
 cabbre gpu Git push --set-upstream origin
 cabbre gd Git diff
@@ -144,7 +144,7 @@ filetype plugin on
 
 
 command! -nargs=* GitCheckout :call GitCheckout(<f-args>)
-command! -nargs=* GitCheckoutb :call GitCheckoutb(<f-args>)
+command! -nargs=* GitCheckoutB :call GitCheckoutB(<f-args>)
 command! -nargs=* GitBranchD :call GitBranchD(<f-args>)
 
 function! GitCheckout()
@@ -154,11 +154,11 @@ function! GitCheckout()
     execute 'Git checkout' branch
 endfunction
 
-function! GitCheckoutb()
+function! GitCheckoutB()
     call inputsave()
     let branch = input('')
     call inputrestore()
-    execute 'Git checkout -b' branch
+    execute 'Git checkout -B' branch
 endfunction
 
 function! GitBranchD()
