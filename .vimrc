@@ -91,6 +91,10 @@ cabbre gitcheckoutbn Git checkout -B new
 cabbre newnewbranch Git checkout -B new
 cabbre nnbr Git checkout -B new
 
+cabbre gitcheckoutcurrentfile Git checkout -- %
+cabbre restoreme Git checkout -- %
+cabbre rsme Git checkout -- %
+
 cabbre gpu Git push --set-upstream origin
 cabbre gpn Git push --set-upstream origin new
 cabbre gd Git diff
