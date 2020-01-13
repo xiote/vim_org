@@ -74,6 +74,12 @@ cabbre deletebranch GitBranchD
 cabbre db GitBranchD
 cabbre deletenewbranch Git branch -D new
 cabbre dnb Git branch -D new
+cabbre removebranch GitBranchD
+cabbre rmbr GitBranchD
+cabbre rb GitBranchD
+cabbre removenewbranch Git branch -D new
+cabbre rmnbr Git branch -D new
+cabbre rnb Git branch -D new
 
 cabbre gitcheckout GitCheckout
 cabbre changebranch GitCheckout
