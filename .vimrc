@@ -77,19 +77,26 @@ cabbre dnb Git branch -D new
 cabbre gitcheckout GitCheckout
 cabbre changebranch GitCheckout
 cabbre chb GitCheckout
+cabbre cb GitCheckout
 cabbre gitcheckoutm Git checkout master
 cabbre changemasterbranch Git checkout master
 cabbre chmb Git checkout master
+cabbre cmb Git checkout master
 cabbre gitcheckoutn Git checkout new
 cabbre changenewbranch Git checkout new
 cabbre chnb Git checkout new
+cabbre cnb Git checkout new
 
 cabbre gitcheckoutb GitCheckoutB
 cabbre newbranch GitCheckoutB
 cabbre nb GitCheckoutB
+cabbre makebranch GitCheckoutB
+cabbre mkbr GitCheckoutB
 cabbre gitcheckoutbn Git checkout -B new
 cabbre newnewbranch Git checkout -B new
 cabbre nnb Git checkout -B new
+cabbre makenewbranch Git checkout -B new
+cabbre mknbr Git checkout -B new
 
 cabbre gitcheckoutcurrentfile Git checkout -- %
 cabbre restoreme Git checkout -- %
