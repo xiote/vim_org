@@ -66,7 +66,8 @@ cabbre lb Git branch
 
 cabbre currentbranch Git rev-parse --abbrev-ref HEAD
 cabbre currbr Git rev-parse --abbrev-ref HEAD
-cabbre cb Git rev-parse --abbrev-ref HEAD
+cabbre printworkingbranch Git rev-parse --abbrev-ref HEAD
+cabbre pwb Git rev-parse --abbrev-ref HEAD
 
 cabbre gitbranchd GitBranchD
 cabbre deletebranch GitBranchD
