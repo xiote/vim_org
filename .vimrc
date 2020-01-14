@@ -138,8 +138,6 @@ cabbre tl GetLink
 cabbre tn tabnew 
 cabbre plugupdate PlugUpdate
 cabbre pu PlugUpdate
-cabbre updateplug PlugUpdate
-cabbre up PlugUpdate
 cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
