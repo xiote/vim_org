@@ -82,6 +82,7 @@ cabbre rmbr GitBranchD
 cabbre rb GitBranchD
 cabbre removenewbranch Git branch -D new
 cabbre rmnbr Git branch -D new
+cabbre rmnb Git branch -D new
 cabbre rnb Git branch -D new
 
 cabbre gitcheckout GitCheckout
@@ -107,6 +108,7 @@ cabbre newnewbranch Git checkout -B new
 cabbre nnb Git checkout -B new
 cabbre makenewbranch Git checkout -B new
 cabbre mknbr Git checkout -B new
+cabbre mknb Git checkout -B new
 
 cabbre gitcheckoutcurrentfile Git checkout -- %
 cabbre restoreme Git checkout -- %
