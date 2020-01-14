@@ -10,6 +10,7 @@ Plug 'fatih/vim-go'
 Plug 'https://tpope.io/vim/fugitive.git'
 Plug 'vim-syntastic/syntastic'
 Plug 'vimwiki/vimwiki'
+Plug 'OmniSharp/omnisharp-vim'
 
 Plug 'xiote/link.vim'
 
@@ -135,6 +136,7 @@ cabbre tc tabclose
 cabbre tl GetLink
 cabbre tn tabnew 
 cabbre plugupdate PlugUpdate
+cabbre pu PlugUpdate
 cabbre updateplug PlugUpdate
 cabbre up PlugUpdate
 cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
