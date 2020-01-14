@@ -12,6 +12,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'vimwiki/vimwiki'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
+Plug 'Shadowsith/vim-dotnet'
 
 Plug 'xiote/link.vim'
 
