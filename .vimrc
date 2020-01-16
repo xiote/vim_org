@@ -115,6 +115,9 @@ cabbre gitcheckoutcurrentfile Git checkout -- %
 cabbre restoreme Git checkout -- %
 cabbre rsme Git checkout -- %
 
+cabbre gitlsfiles Git ls-files --stage
+cabbre gls Git ls-files --stage
+
 cabbre gpu Git push --set-upstream origin
 cabbre gpun Git push --set-upstream origin new
 cabbre gd Git diff
