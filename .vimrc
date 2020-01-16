@@ -225,7 +225,7 @@ hi TabLineFill term=bold cterm=bold ctermbg=0
 
 iabbre ``` ```<CR>```<UP>
 iabbre c cabbre
-iabbre r resolve # 
+cabbre r resolve
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
