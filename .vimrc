@@ -60,7 +60,8 @@ cabbre df DiffOrig
 cabbre ga Git add %
 cabbre gc Git commit -a -m %
 cabbre gcm Git commit -a 
-cabbre gcam Git commit -a --amend
+"cabbre gcam Git commit -a --amend
+cabbre gcam GitCommitAmend 
 cabbre git Git
 
 cabbre gitbranch Git branch
@@ -82,6 +83,7 @@ cabbre rmbr GitBranchD
 cabbre rb GitBranchD
 cabbre removenewbranch Git branch -D new
 cabbre rmnbr Git branch -D new
+cabbre rmnb Git branch -D new
 cabbre rnb Git branch -D new
 
 cabbre gitcheckout GitCheckout
@@ -107,6 +109,7 @@ cabbre newnewbranch Git checkout -B new
 cabbre nnb Git checkout -B new
 cabbre makenewbranch Git checkout -B new
 cabbre mknbr Git checkout -B new
+cabbre mknb Git checkout -B new
 
 cabbre gitcheckoutcurrentfile Git checkout -- %
 cabbre restoreme Git checkout -- %
@@ -169,6 +172,7 @@ filetype plugin on
 command! -nargs=* GitCheckout :call GitCheckout(<f-args>)
 command! -nargs=* GitCheckoutB :call GitCheckoutB(<f-args>)
 command! -nargs=* GitBranchD :call GitBranchD(<f-args>)
+command! -nargs=* GitCommitAmend :call GitCommitAmend(<f-args>)
 
 function! GitCheckout()
     call inputsave()
@@ -192,6 +196,13 @@ function! GitBranchD()
 endfunction
 
 
+function! GitCommitAmend()
+    call inputsave()
+    let message = input('')
+    call inputrestore()
+    execute 'Git commit -a --amend -m"' message '"'
+endfunction
+
 "function! GitCommit(path,...)
 "    if a:0 > 0
 "        " message
@@ -214,6 +225,7 @@ hi TabLineFill term=bold cterm=bold ctermbg=0
 
 iabbre ``` ```<CR>```<UP>
 iabbre c cabbre
+iabbre r resolve # 
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
