@@ -3,11 +3,10 @@
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
-"call plug#begin('~/.vim/plugged')
-call plug#begin('~/.vim/pack/plugins/start')
+call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go'
-Plug 'https://tpope.io/vim/fugitive.git'
+Plug 'https://tpope.io/vim/fugitive.git' " 처음에 실행이 안될때, 다시 열어라
 Plug 'vim-syntastic/syntastic'
 Plug 'vimwiki/vimwiki'
 Plug 'OmniSharp/omnisharp-vim'
