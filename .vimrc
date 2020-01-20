@@ -15,6 +15,7 @@ Plug 'dense-analysis/ale'
 Plug 'Shadowsith/vim-dotnet'
 
 Plug 'xiote/link.vim'
+Plug 'xiote/myvim'
 
 " Make sure you use single quotes
 
