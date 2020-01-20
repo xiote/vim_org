@@ -147,6 +147,7 @@ cabbre tl GetLink
 cabbre tn tabnew 
 cabbre plugupdate PlugUpdate
 cabbre pu PlugUpdate
+cabbre pa PutAbc 
 cabbre ub edit ~/github.com/xiote/ubuntu/18.04/Custom-Dockerfile
 cabbre vimlink edit ~/github.com/xiote/link.vim/plugin/link.vim
 cabbre vimrc edit ~/github.com/xiote/vim/.vimrc
@@ -176,6 +177,7 @@ command! -nargs=* GitCheckout :call GitCheckout(<f-args>)
 command! -nargs=* GitCheckoutB :call GitCheckoutB(<f-args>)
 command! -nargs=* GitBranchD :call GitBranchD(<f-args>)
 command! -nargs=* GitCommitAmend :call GitCommitAmend(<f-args>)
+command! -nargs=* PutAbc :call PutAbc(<f-args>)
 
 function! GitCheckout()
     call inputsave()
@@ -198,12 +200,19 @@ function! GitBranchD()
     execute 'Git branch -D' branch
 endfunction
 
-
 function! GitCommitAmend()
     call inputsave()
     let message = input('')
     call inputrestore()
     execute 'Git commit -a --amend -m"' message '"'
+endfunction
+
+function! PutAbc()
+    call inputsave()
+    let message = input('')
+    call inputrestore()
+    let code = message
+    execute 'normal i' message
 endfunction
 
 "function! GitCommit(path,...)
