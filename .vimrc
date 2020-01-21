@@ -54,7 +54,7 @@ autocmd InsertLeave * set cul
 
 cabbre cl call ClearScreen()
 cabbre cp !cp % 
-cabbre cpkara !cp % ~/.config/karabiner/karabiner.json
+cabbre cpnu !cp % ~/.config/karabiner/karabiner.json
 cabbre del bdelete
 cabbre df DiffOrig
 cabbre ga Git add %
